@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    padding: 1%;
+}
+
+
+.title{
+    font-family: Roboto;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+
+}
+

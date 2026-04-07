@@ -1,0 +1,378 @@
+.main{
+    background-color: #F2F5FC;
+    display: flex;
+    flex-direction: column;
+}
+
+.balance {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 120px;
+}
+
+.left {
+    align-self: start;
+}
+
+.balanceSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    justify-self: center;
+}
+
+.reportSection {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    justify-self: end;
+}
+
+/* центр */
+
+.balanceSection p{
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    vertical-align: middle;
+    color: #52555FB2;
+}
+
+.balanceSection button{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border: 2px solid #E0E0E0;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* права сторона */
+.reportSection{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #52555FB2;
+}
+
+/* баланс поле */
+.balanceValue{
+    padding: 8px 18px;
+    border: 2px solid #E0E0E0;
+    border-radius: 20px;
+    font-weight: 700;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.transactions {
+    margin-top: 50px;
+}
+
+.transactions-form{
+    background-color: #FFFFFF;
+}
+
+.transactions-mainLine{
+    height: 580px;
+}
+
+.transactions-buttons button:first-child{
+    width: 138px;
+    height: 40px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    background-color: #FEFEFE;
+    color: #FF751D;
+}
+
+.transactions-buttons button:nth-child(2){
+    width: 138px;
+    height: 40px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    background-color: #FAFBFD;
+    color: #000000;
+}
+
+.transactions-buttons button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 23px 23px 0px 0px;
+    cursor: pointer;
+}
+
+.transactions-form{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    border-radius: 0px 20px 0px 0px;
+}
+
+/* календар */
+.transactions-form-calendar{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 30px;
+
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+}
+
+.transactions-form-calendar img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.transactions-form-input{
+    display: flex;
+    align-items: center; /
+    font-family: Roboto;
+    font-size: 12px;
+    color: #C7CCDC;
+}
+
+/* тільки перший input */
+.transactions-form-input > input{
+    width: 268px;
+    height: 40px;
+    border: 2px solid #F5F6FB;
+    border-right: none; 
+    border-radius: 16px 0px 0px 16px; 
+    background-color: white;
+    padding-left: 20px;
+    flex-shrink: 0; 
+}
+
+/* dropdown */
+.transactions-form-input-dropdown{
+    position: relative;
+    width: 170px;
+    height: 40px;
+    flex-shrink: 0; 
+}
+
+.transactions-form-input-dropdown-header{
+    padding: 10px;
+    border: 2px solid #F5F6FB;
+    border-right: none; 
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 2px solid #F5F6FB;
+    margin-top: 5px; 
+    z-index: 10;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #f5f5f5;
+}
+
+/* калькулятор */
+.transactions-form-input-calculator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 126px;
+    height: 40px;
+    border: 2px solid #F5F6FB;
+    border-radius: 0px 16px 16px 0px;
+    padding-right: 10px;
+    flex-shrink: 0; 
+
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.transactions-form-input-calculator input{
+    border: none;
+    outline: none;
+    width: 70px;
+}
+
+/* кнопки */
+.transactions-writeAndclear{
+    margin-left: 30px;
+}
+
+.transactions-writeAndclear button{
+    width: 125px;
+    height: 45px;
+    border-radius: 16px;
+}
+
+.transactions-writeAndclear button:first-child{
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #FF751D;
+}
+
+.transactions-writeAndclear button:nth-child(2){
+    cursor: pointer;
+    color: #52555F;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 2px solid #F5F6FB;
+    background-color: white;
+    margin-left: 15px;
+}
+
+/* таблиця */
+.transactions-graphicsSummary{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.transactions-graphic{
+    width: 760px;
+    margin-left: 15px;
+    margin-bottom: 70px;
+}
+
+.transactions-graphic-header,
+.transactions-graphic-body-row {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr 120px 50px;
+    padding: 10px;
+    border: 2px solid #F5F6FB;
+}
+
+.transactions-graphic-header {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #F5F6FB;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.transactions-graphic-body{
+    max-height: 350px;
+    overflow-y: auto;
+    border: 2px solid #F5F6FB;
+}
+
+.transactions-graphic-body::-webkit-scrollbar{
+    width: 6px;
+}
+
+.transactions-graphic-body::-webkit-scrollbar-thumb {
+    background: #FF6B08;
+    border-radius: 10px;
+}
+
+.transactions-graphic-body-row-minus {
+    color: red;
+}
+
+/* summary */
+
+.transactions-summary{
+    margin-left: 30px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+.transactions-summary-header{
+    display: flex;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F6FB;
+    width: 230px;
+    height: 40px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.transactions-summary-body-row div{
+    display: grid;
+    grid-template-columns: 82px 60px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #F5F6FB;
+    border: 2px solid white;
+    width: 230px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.transactions-graphic-body-row-delete{
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.logoAndTitle h1{
+    font-family: Roboto;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+
+}
+
+.interactionsHeader{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.interactionsHeader a{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: #52555F;
+
+}
+.UserLogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.UserLogo p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: right;
+    color: #52555F;
+}
+
+.interactionsHeader span{
+    width: 1px;
+    height: 24px;
+    background: #E0E0E0;
+}

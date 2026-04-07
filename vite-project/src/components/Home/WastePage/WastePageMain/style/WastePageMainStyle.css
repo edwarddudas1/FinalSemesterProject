@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.WastePageMain{
+    background-color: #F2F5FC;
+}
+
+/* MainLine */
+
+.WastePageMainLine{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 50px;
+}
+/* 
+WastePageMainLine-backToHome */
+
+.WastePageMainLine-backToHome{
+    display: flex;
+    align-items: center;
+}
+
+.WastePageMainLine-backToHome a{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-decoration: none;
+    color: #52555FB2;
+    padding-left: 15px;
+}
+
+
+/* WastePageMainLine-balance */
+
+
+.WastePageMainLine-balance{
+    display: flex;
+    align-items: center;
+}
+
+.WastePageMainLine-balance p:first-child{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #52555FB2;
+
+    margin-right: 30px;
+}
+.WastePageMainLine-balance p:nth-child(2){
+    margin-right: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 16px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: right;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: black;
+}
+
+.WastePageMainLine-balance button{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: #52555FB2;
+
+    cursor: pointer;
+    background-color: #F2F5FC;
+
+    border: 2px solid white;
+    padding: 14px;
+    border-radius: 16px;
+}
+
+/* WastePageMainLine-period */
+
+.WastePageMainLine-period p:first-child{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: center;
+
+    color: #52555FB2;
+
+    margin-bottom: 5px;
+}
+
+.WastePageMainLine-period-sliderData{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.WastePageMainLine-period-sliderData img {
+    cursor: pointer;
+}
+
+.WastePageMainLine-period-sliderData p{
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+}
+
+/* WastePageMainEarnAndWaste */
+
+
+.WastePageMainEarnAndWaste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.WastePageMainEarnAndWaste-wasteLine{
+    display: flex;
+    align-items: center;
+}
+
+.WastePageMainEarnAndWaste-wasteLine p:first-child{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    color: #52555F;
+
+    padding-right: 12px;
+}
+
+.WastePageMainEarnAndWaste-wasteLine p:nth-child(2){
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    vertical-align: middle;
+
+    color: #E53935;
+
+    margin-right: 15px;
+}
+
+.WastePageMainEarnAndWaste-earnLine{
+    display: flex;
+    align-items: center;
+}
+
+.WastePageMainEarnAndWaste-earnLine p:first-child{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    color: #52555F;
+
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.WastePageMainEarnAndWaste-earnLine p:nth-child(2){
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    vertical-align: middle;
+
+    color: #407946;
+
+    
+}
+
+
+/* WastePageMainWasteContainer */
+
+.WastePageMainWasteContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.WastePageMainWasteContainer-line{
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 15px;
+
+}
+
+.WastePageMainWasteContainer-line p{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: #000000;
+
+}
+
+.WastePageMainWasteContainer-line img:first-child{
+    padding-right: 15px;
+}
+
+.WastePageMainWasteContainer-line img:nth-child(1){
+    padding-left: 15px;
+}
+
+.WastePageMainWasteContainer-line img{
+    cursor: pointer;
+}
+
+.WastePageMainWasteContainer-Contcards-1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+
+.WastePageMainWasteContainer-card{
+    display: grid;
+    justify-items: center;
+}
+
+.WastePageMainWasteContainer-card p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: #52555F;
+
+}
+
+.WastePageMainWasteContainer-card p:first-child{
+    padding-bottom: 10px;
+}
+
+.WastePageMainWasteContainer-card p:nth-child(3){
+    padding-top: 7px;
+}
+
+.WastePageMainWasteContainer-Contcards-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.WastePageMainWasteContainer-line-button{
+    display: flex;
+    
+}
+
+.WastePageMainWasteContainer-line-button button{
+    background: none;
+    border: none;
+}
+
+
+/* WastePageMainGraphic-BarGraphic */
+
+.WastePageMainGraphic {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.WastePageMainGraphic canvas{
+   width: 1000px;
+}
+
+.WastePageMainGraphicContainer canvas {
+  width: 100% !important;
+  max-width: 900px;
+  height: 400px !important;
+  background-color: white;
+  border-radius: 20px;
+}
